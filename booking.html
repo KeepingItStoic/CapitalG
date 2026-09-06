@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capital Detail — Book Greg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/booking.css">
+<script src="js/global.js" defer></script>
+<script src="js/booking.js" defer></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-mark">
+    <span class="nav-capital">Capital</span>
+    <span class="nav-detail">Detail</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="booking.html" class="active">Contact</a></li>
+  </ul>
+  <a href="booking.html" class="nav-book">Book Now</a>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="page-eyebrow animate-in delay-1">Capital Detail — Let's Talk</div>
+  <h1 class="page-title animate-in delay-2">BOOK<br><span>GREG</span></h1>
+  <p class="page-sub animate-in delay-3">
+    No forms that go nowhere. No automated responses.
+    You reach out, Greg responds — personally.
+  </p>
+</header>
+
+<!-- ── CONTACT SECTION ── -->
+<section class="contact-section">
+  <div class="contact-inner">
+
+    <!-- LEFT: FORM -->
+    <div class="form-col reveal">
+      <div class="section-label">Send A Message</div>
+
+      <form class="booking-form" id="bookingForm">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="First &amp; Last" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="vehicle">Your Vehicle</label>
+          <input type="text" id="vehicle" name="vehicle" placeholder="Year, Make &amp; Model" required>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service Interested In</label>
+          <select id="service" name="service">
+            <option value="" disabled selected>Select a service</option>
+            <option value="full-detail">Full Detail</option>
+            <option value="paint-correction">Paint Correction</option>
+            <option value="ceramic-coating">Ceramic Coating</option>
+            <option value="interior-detail">Interior Detail</option>
+            <option value="unsure">Not Sure — I Need Greg's Opinion</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Anything Else Greg Should Know</label>
+          <textarea id="message" name="message" rows="4" placeholder="Condition of the vehicle, specific concerns, preferred dates..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary form-submit">Send It To Greg</button>
+
+        <div class="form-note">
+          Greg personally reads and responds to every message — usually within a few hours.
+        </div>
+
+      </form>
+
+      <!-- Success state -->
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon">G</div>
+        <h3>Message received.</h3>
+        <p>Greg will be in touch soon — personally.</p>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: CONTACT INFO + DETAILS -->
+    <aside class="info-col reveal">
+
+      <div class="info-block">
+        <div class="info-label">Call or Text</div>
+        <a href="tel:+15551234567" class="info-value info-value--large">(555) 123-4567</a>
+        <p class="info-note">Greg picks up. If he's mid-detail, he'll call back within the hour.</p>
+      </div>
+
+      <div class="info-divider"></div>
+
+      <div class="info-block">
+        <div class="info-label">Email</div>
+        <a href="mailto:greg@capitaldetail.com" class="info-value">greg@capitaldetail.com</a>
+      </div>
+
+      <div class="info-divider"></div>
+
+      <div class="info-block">
+        <div class="info-label">Service Area</div>
+        <div class="info-value">Dayton, OH &amp; Surrounding Areas</div>
+        <p class="info-note">Mobile detailing available — Greg comes to you.</p>
+      </div>
+
+      <div class="info-divider"></div>
+
+      <div class="info-block">
+        <div class="info-label">Hours</div>
+        <div class="hours-grid">
+          <span>Monday – Saturday</span>
+          <span>By Appointment</span>
+          <span>Sunday</span>
+          <span>Closed</span>
+        </div>
+        <p class="info-note">Each appointment is a full-day booking. Plan accordingly.</p>
+      </div>
+
+      <div class="info-divider"></div>
+
+      <!-- WHAT TO EXPECT -->
+      <div class="expect-block">
+        <div class="info-label">What To Expect</div>
+        <div class="expect-steps">
+          <div class="expect-step">
+            <div class="expect-num">01</div>
+            <div>
+              <div class="expect-title">You Reach Out</div>
+              <p class="expect-text">Call, text, or use the form. Greg responds personally.</p>
+            </div>
+          </div>
+          <div class="expect-step">
+            <div class="expect-num">02</div>
+            <div>
+              <div class="expect-title">Quick Assessment</div>
+              <p class="expect-text">Greg asks about your vehicle and gives you an honest recommendation and quote.</p>
+            </div>
+          </div>
+          <div class="expect-step">
+            <div class="expect-num">03</div>
+            <div>
+              <div class="expect-title">Day Is Booked</div>
+              <p class="expect-text">Your vehicle owns the day. Greg shows up and doesn't leave until it's right.</p>
+            </div>
+          </div>
+          <div class="expect-step">
+            <div class="expect-num">04</div>
+            <div>
+              <div class="expect-title">Results You'll Notice</div>
+              <p class="expect-text">Capital work. Every time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="index.html" class="footer-mark">
+    <span class="footer-capital">Capital</span>
+    <span class="footer-detail">Detail</span>
+  </a>
+  <ul class="footer-links">
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="booking.html">Contact</a></li>
+  </ul>
+  <div class="footer-right">© 2025 Capital Detail &nbsp;·&nbsp; All rights reserved</div>
+</footer>
+
+</body>
+</html>
